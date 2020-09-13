@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+/* body */
+.holygrail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* header */
+.holygrail-header {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: blueviolet;
+}
+
+/* section */
+.holygrail-section {
+  display: flex;
+  flex: 1;
+  background-color: coral;
+}
+
+/* navigation */
+.holygrail-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  flex: 0 0 12em;
+  border: white 1px solid;
+}
+.holygrail-navigation-menu {
+  width: 100%;
+  padding: 0%;
+}
+.holygrail-navigation-list {
+  background-color: white;
+  list-style-type: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+}
+.holygrail-navigation-list:hover {
+  background-color: cornflowerblue;
+}
+
+/* content */
+.holygrail-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  flex: 1;
+  border: white 1px solid;
+}
+.holygrail-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.holygrail-content-text {
+  text-align: center;
+}
+
+/* advertisement */
+.holygrail-advertisement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  flex: 0 0 12em;
+  border: white 1px solid;
+}
+.holygrail-advertisement-video {
+  padding: 5px;
+}
+
+/* footer */
+.holygrail-footer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: khaki;
+}
