@@ -1,0 +1,19 @@
+.resume-container {
+    background-color: aqua;
+    
+}
+
+/* header */
+.resume-header {
+    background-color: blueviolet;
+}
+
+/* container */
+.resume-aboutme {
+    background-color: chartreuse;
+}
+
+/* bio */
+.resume-bio {
+    background-color: crimson;
+}
