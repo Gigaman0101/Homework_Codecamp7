@@ -1,19 +1,36 @@
+/* body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .resume-container {
     background-color: aqua;
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* header */
 .resume-header {
     background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 /* container */
 .resume-aboutme {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
     background-color: chartreuse;
 }
 
 /* bio */
 .resume-bio {
+    display: flex;
+    justify-content: center;
     background-color: crimson;
+    padding: 40px;
 }
