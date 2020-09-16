@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .resume-container {
-    background-color: aqua;
+    background-color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -32,7 +32,8 @@
     display: flex;
     justify-content: center;
     padding: 100px;
-    background-color: chartreuse;
+    background-image: url("https://www.sfu.ca/~kga29/IAT_235/WTE/img/header-bg.png");
+    background-size: 100% 100%;
 }
 .resume-profile-container{
     display: flex;
@@ -52,12 +53,14 @@
     flex-direction: column;
     text-align: center;
     background-color: darkgreen;
+    padding: 60px;
 }
 .resume-aboutme-history {
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     background-color: darkgrey;
+    padding: 80px;
 }
 .resume-aboutme-mypic {
     padding: 0 25px 0 15px;
