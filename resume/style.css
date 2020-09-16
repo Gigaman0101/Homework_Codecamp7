@@ -20,11 +20,36 @@
 }
 
 /* container */
-.resume-aboutme {
+.resume-profile {
     display: flex;
     justify-content: center;
     padding: 100px;
     background-color: chartreuse;
+}
+.resume-aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkgoldenrod;
+}
+.resume-aboutme-text {
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+}
+.resume-aboutme-history {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    background-color: darkgrey;
+}
+.resume-aboutme-mypic {
+    padding: 0 25px 0 15px;
+}
+.resume-aboutme-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* bio */
