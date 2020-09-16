@@ -34,7 +34,8 @@
 }
 .resume-aboutme-text {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     background-color: darkgreen;
 }
 .resume-aboutme-history {
@@ -50,6 +51,36 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.resume-education {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.resume-experience {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.resume-experience-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+/* skill */
+.resume-skill {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.resume-skill-container {
+    display: flex;
+    /* flex-direction: column; */
+}
+.resume-skill-container {
+    display: flex;
+    flex-direction: column;
 }
 
 /* bio */
