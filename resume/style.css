@@ -32,7 +32,7 @@
     text-decoration: none;
     cursor: pointer;
 }
-..resume-header-list a:hover {
+.resume-header-list a:hover {
     background-color: #777777;
 }
 .resume-aboutme-image {
