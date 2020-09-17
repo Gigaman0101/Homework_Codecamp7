@@ -11,28 +11,31 @@
 <body class="resume-container">
     <header class="resume-header">
         <div class="resume-header-list">
-            <ul>
-                <li class="resume-header-detail"><a href="">Home</a></li>
-                <li class="resume-header-detail"><a href="">about</a></li>
-                <li class="resume-header-detail"><a href="">RESUME</a></li>
-                <li class="resume-header-detail"><a href="">contact me</a></li>
-            </ul>
+            <a href="#home">Home</a>
+            <a href="#about">about</a>
+            <a href="#resume">RESUME</a>
+            <a href="#contact">contact me</a>
         </div>
     </header>
-    <section class="resume-profile">
+    <section id="home" class="resume-profile">
         <div class="resume-profile-container">
             <h1>SARIT PLEWMA</h1>
             <p>Welcome to my RESUME!!</p>
-            <div>
-                <a href="#">facebook</a>
-                <a href="#">line</a>
-                <a href="#">twitter</a>
-                <a href="#">instragram</a>
+            <div class="resume-profile-container-link">
+                <a href="https://www.facebook.com/profile.php?viewas=100000686899395&privacy_source=timeline_gear_menu&entry_point=action_bar"
+                    target="_blank">
+                    <img src="https://www.freeiconspng.com/uploads/facebook-f-logo-white-background-21.jpg"
+                        alt="facebook-icon" width="50px" height="50px">
+                </a>
+                <a href="https://www.instagram.com/jui_sarit" target="_blank">
+                    <img src="https://i.pinimg.com/originals/d3/9a/23/d39a23d8f19c6cda9412ee93e7bddc66.jpg"
+                        alt="instragram-icon" width="50px" height="50px">
+                </a>
             </div>
         </div>
     </section>
     <main>
-        <section class="resume-aboutme">
+        <section id="about" class="resume-aboutme">
             <div class="resume-aboutme-container">
                 <div class="resume-aboutme-text">
                     <h1>about me</h1>
@@ -42,10 +45,10 @@
                 </div>
                 <div class="resume-aboutme-history">
                     <div class="resume-aboutme-mypic">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pearl_Winter_White_Russian_Dwarf_Hamster_-_Front.jpg"
-                            alt="รูปตัวเอง" width="200px" height="200px" class="resume-aboutme-image">
+                        <img src="https://scontent.fbkk6-1.fna.fbcdn.net/v/t1.0-9/15826786_1395436497135235_3111227246163922207_n.jpg?_nc_cat=102&_nc_sid=85a577&_nc_eui2=AeHgVyoxon4M7UMvWxm8OnqzqloCeXRH13qqWgJ5dEfXet3UKKiphXk_IoJRM-QN-dUK6dxSh4EJ9kYFVVoGcPR0&_nc_ohc=SrHBpQ13fUgAX-Aj0B5&_nc_ht=scontent.fbkk6-1.fna&oh=b436fac5fbbbc4ca89d528052268bedd&oe=5F8AC79F"
+                            alt="รูปตัวเอง" width="300px" height="300px" class="resume-aboutme-image">
                     </div>
-                    <div>
+                    <div class="resume-aboutme-list">
                         <h3>History</h3>
                         <div>
                             <ul>
@@ -70,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="resume-education">
+        <section id="resume" class="resume-education">
             <div>
                 <h3>Education</h3>
                 <div class="resume-experience-box">
@@ -81,29 +84,41 @@
             </div>
         </section>
         <section class="resume-experience">
-            <div class="">
-                <h3>Work Experience</h3>
-                <div class="resume-experience-box">
-                    <h4>Research & development engineer</h4>
-                    <p>I.T.C. (1993) CO., LTD.</p>
-                    <h5>2018-2020</h5>
-                    <ul>
-                        <li>Take part in the design team, from product concept through manufacturing in many projects
-                            about extractor, hot air dryer, freeze dryer, and conveyor </li>
-                        <li>Work with a technician to solve technical aspects of design, including engineering analysis
-                            and manufacturability at the customer plant</li>
-                    </ul>
+            <div class="resume-experience-container">
+                <h3 class="resume-experience-container-head">Work Experience</h3>
+                <div class="resume-experience-container-box">
+                    <div class="resume-experience-container-box-header">
+                        <h4>Research & development engineer</h4>
+                        <p>I.T.C. (1993) CO., LTD.</p>
+                        <h5>2018-2020</h5>
+                    </div>
+                    <div class="resume-experience-container-box-duty">
+                        <ul>
+                            <li>Take part in the design team, from product concept through manufacturing in many
+                                projects
+                                about extractor, hot air dryer, freeze dryer, and conveyor </li>
+                            <li>Work with a technician to solve technical aspects of design, including engineering
+                                analysis
+                                and manufacturability at the customer plant</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="resume-experience-box">
-                    <h4>Trainee</h4>
-                    <p>Thai Ruam Jai Vegetable Oil Co., Ltd. </p>
-                    <h5>June 2017- July 2017</h5>
-                    <ul>
-                        <li>Improve the efficiency of the cooling tower used for rice bran oil plant by modifying the
-                            ventilation system</li>
-                        <li>Assist process engineer team and technician to control process and solve the problem during
-                            the operation of rice bran oil plant.</li>
-                    </ul>
+                    <div class="resume-experience-container-box-header">
+                        <h4>Trainee</h4>
+                        <p>Thai Ruam Jai Vegetable Oil Co., Ltd. </p>
+                        <h5>June 2017- July 2017</h5>
+                    </div>
+                    <div class="resume-experience-container-box-duty">
+                        <ul>
+                            <li>Improve the efficiency of the cooling tower used for rice bran oil plant by modifying
+                                the
+                                ventilation system</li>
+                            <li>Assist process engineer team and technician to control process and solve the problem
+                                during
+                                the operation of rice bran oil plant.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -120,10 +135,10 @@
         <!-- <section class="resume-">
         </section> -->
     </main>
-    <footer class="resume-bio">
+    <footer id="contact" class="resume-bio">
         <div>
             <div>
-                <h1>contact Us</h1>
+                <h1>Contact Us</h1>
             </div>
             <div>
                 <h1>Location</h1>
