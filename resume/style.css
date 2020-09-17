@@ -10,12 +10,6 @@
     flex-direction: column;
     min-height: 100vh;
 }
-.resume-header-list{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-}
 
 /* header */
 .resume-header {
@@ -24,6 +18,19 @@
     justify-content: center;
     padding: 10px;
 }
+.resume-header-list ul {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+    word-spacing: 2px;
+}
+.resume-header-detail {
+    padding: 10px;
+}
+img {
+    border-radius: 50%;
+  }
 
 /* container */
 .resume-profile {
