@@ -119,23 +119,114 @@ let sumNumberNotPrime = (n) => {
 // ข้อ 9 : ให้เขียนโปรแกรมหา factorial n ( n! = 1×2×3×4×...×n )
 
 let factorial = (n) => {
-    sum = 1;
+    let sum = 1;
     for (let i = 1; i <= n; i++) {
         sum = sum * i
-        console.log(`i: ${i}`);
-        console.log(`n: ${n}`);
     }
-    console.log(sum);
+    return sum;
 }
-factorial(0);
-factorial(1);
-factorial(5);
+// console.log(`ข้อ 9 :${factorial(0)}`);
+// console.log(`ข้อ 9 :${factorial(1)}`);
+// console.log(`ข้อ 9 :${factorial(5)}`);
 
-// ข้อ 10 : 
+// ข้อ 10 : ให้เขียน function ที่รับ List ของ ตัวเลข และ รับค่า boolean => 
+// ถ้า boolean มีค่าเป็น true เรียงลำดับตัวเลขจากน้อยไปหามาก
+// ถ้า boolean เป็น false เรียงลำดับตัวเลขจากมากไปน้อย
 
-let toSortNumber = () => {
-    let a = +prompt("Enter a number");
-    for (let i = 0; i < 10; i++) {
+let toSortNumber = (numList, bool) => {
+    if (bool) {
+        return numList.sort((a, b) => a - b);
+    }
+    return numList.sort((a, b) => b - a);
+};
 
+console.log(`ข้อ 10 : ${toSortNumber([1, 50, 500, 100, 23, 14], true)}`);
+console.log(`ข้อ 10 :${toSortNumber([1, 50, 500, 100, 23, 14], false)}`);
+
+// ข้อ 11 : ทำเหมือนข้อ 10 แต่ห้ามใช้ฟังก์ชัน sort() และ reverse()
+
+let toSortNumber2 = (numList, bool) => {
+    function compareNumber(a, b) {
+        if (a < b) {
+            return -1;
+        } else if (a > b) {
+            return 1;
+        } else {
+            return 0
+        }
+    }
+    if (bool) {
+        numList.join('')
     }
 }
+console.log(`ข้อ 11 : ${toSortNumber2([1, 50, 500, 100, 23, 14], true)}`);
+
+// ข้อ 12 : ถ้าจำนวนนับที่น้อยกว่า 16 ที่เป็นพหุคูณของ 3 หรือ 5 เท่ากับ 3, 5, 6, 9, 10, 12 และ 15 โดยมีผลรวมเท่ากับ 60 แล้ว (3 + 5 + 6 + 9 + 10 + 12 + 15 = 60)
+// จงหาผลรวมของจำนวนนับ ที่เป็นพหุคูณของ 3 หรือ 5 ที่มีค่าน้อยกว่า 1000
+
+let multiPle = (num) => {
+    let sum = 0;
+    for (let i = 0; i < num; i++) {
+        if (i % 3 === 0) {
+            sum += i;
+        } else if (i % 5 === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(`ข้อ 12: ${multiPle(16)}`);
+
+// ข้อ 13 : หาผลรวมของเลขที่ใส่เข้ามา
+// เช่น 130,120 => จะได้ 1+3+0+1+2+0 = 7
+
+let sumDigit = (num1, num2) => {
+    let result1 = num1.toString();
+    let result2 = num2.toString();
+    let sum = 0;
+    for (let i = 0; i <= result1.length - 1; i++) {
+        sum += Number(result1.charAt(i));
+    };
+    for (let i = 0; i <= result2.length - 1; i++) {
+        sum += Number(result2.charAt(i));
+    };
+    return sum;
+}
+console.log(`ข้อ 13 : ${sumDigit(130, 150)}`);
+
+// ข้อ 14 : ผลรวมของเลขโดดของ n! เช่น 6! = 120 => 1 + 2 + 0 = 3
+
+let sumDigitFactorial = (numFac) => {
+    let sum = 1;
+    for (let i = 1; i <= numFac; i++) {
+        sum = sum * i
+    };
+    let result = sum.toString();
+    let total = 0;
+    for (let i = 0; i <= result.length - 1; i++) {
+        total += Number(result.charAt(i));
+    };
+    return total;
+}
+console.log(`ข้อ 14 : ${sumDigitFactorial(6)}`);
+
+// ข้อ 15 : จงหาจำนวนเลขโดดตั้งแต่ 1 ถึง 4,129,980
+
+let sumManyDigit = (num) => {
+    let sum = 0;
+    let result = num.toString()
+    let n = 9;
+    let total = 0;
+    let count = 0;
+    for (let i = 1; i <= result.length; i++) {
+        sum += (i * n)
+        count -= n;
+        n = n + "0";
+        if (i === result.length) {
+            total = sum + ((num + count) * i);
+        }
+    }
+    return total;
+}
+console.log(`ข้อ 15 : ${sumManyDigit(4129980)} ตัว`);
+console.log(`ข้อ 15 : ${sumManyDigit(599)} ตัว`);
