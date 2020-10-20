@@ -2,7 +2,6 @@
 
 // JS-exercise-Quiz 2
 
-
 // ข้อ 1 : ให้เขียนโปรแกรมที่หาจำนวนเฉพาะตั้งแต่ 1 ถึง 100
 let arr = [];
 for (let i = 2; i <= 100; i++) {
@@ -114,7 +113,67 @@ let sumNumberNotPrime = (n) => {
 
 // ข้อ 7 : ให้เขียนโปรแกรมหา ห.ร.ม ของ List ของตัวเลข => Input: [ 6, 8, 16 ] , Output: 2
 
+function gcd_more_than_two_numbers(input) {
+    if (toString.call(input) !== "[object Array]")
+        return false;
+    var len, a, b;
+    len = input.length;
+    if (!len) {
+        return null;
+    }
+    a = input[0];
+    for (var i = 1; i < len; i++) {
+        b = input[i];
+        a = gcd_two_numbers(a, b);
+    }
+    return a;
+}
+
+function gcd_two_numbers(x, y) {
+    if ((typeof x !== 'number') || (typeof y !== 'number'))
+        return false;
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while (y) {
+        var t = y;
+        y = x % y;
+        x = t;
+    }
+    return x;
+}
+console.log(`ข้อ 7 : ${gcd_more_than_two_numbers([3, 15, 27])}`);
+console.log(`ข้อ 7 : ${gcd_more_than_two_numbers([24, 48, 96])}`);
+
+
 // ข้อ 8 : ให้เขียนโปรแกรมหา ค.ร.น. ของ List ของตัวเลข => Input: [ 24, 48, 96 ]  Output: 96 , Input: [ 2, 3, 5, 7 ] Output: 210
+
+// let lcm = (arr) => {
+//     let maxNum = 0;
+//     for (let num of arr) {
+//         num = num < 0 ? 0 - num : num;
+//         maxNum = num > maxNum ? num : maxNum;
+//     }
+//     for (let i = maxNum; i <= Infinity; i += maxNum) {
+//         for (let num of arr) {
+//             if (i % num !== 0) break;
+//             if (arr.indexOf(num) === arr.length - 1) return i;
+//         }
+//     }
+
+// }
+
+let LCM = (arr) => {
+    arr.sort((a, b) => a - b)
+    let num = arr[arr.length - 1];
+    for (let i = num; i <= Infinity; i--) {
+        for (let j of arr) {
+            if (i % j === 0) break;
+            if (arr.indexOf(j) === arr.length - 1) return i;
+        }
+    }
+}
+console.log(`ข้อ 8 : ค.ร.น ${LCM([48, 24, 96])}`);
+
 
 // ข้อ 9 : ให้เขียนโปรแกรมหา factorial n ( n! = 1×2×3×4×...×n )
 
