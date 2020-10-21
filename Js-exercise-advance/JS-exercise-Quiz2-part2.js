@@ -249,7 +249,7 @@ let squareRoot = (number) => {
             result *= i;
             i--;
         }
-    }
+    };
     if (number === 1) {
         return result
     } else if (result === 1) {
@@ -257,7 +257,8 @@ let squareRoot = (number) => {
     } else {
         return result + " root " + number
     }
-}
+};
+
 console.log(`ข้อ 10 : squareRoot(17) => ${squareRoot(17)}`);
 console.log(`ข้อ 10 : squareRoot(8) => ${squareRoot(8)}`);
 
